@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffcc00">
+  <title>Ashoka Prints | Coming Soon</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #fffdf7;
+    }
+    .coming-soon {
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .coming-soon img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    @media (max-aspect-ratio: 3/4) {
+      .coming-soon img {
+        object-fit: contain;
+        background: #fffdf7;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="coming-soon" aria-label="Ashoka Prints coming soon">
+    <img src="ashoka-prints-coming-soon.png"
+         alt="Ashoka Prints — Quality That Speaks. Coming Soon."
+         fetchpriority="high">
+  </main>
+</body>
+</html>
