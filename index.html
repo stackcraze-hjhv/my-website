@@ -28,22 +28,43 @@
       display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       object-position: center;
+      background-color: #000000;
     }
+      .dshow
+      {
+        display:block;
+      }
+      
+      .mshow
+      {
+        display:none;
+      }
+    
     @media (max-aspect-ratio: 3/4) {
+      .dshow
+      {
+        display:none;
+      }
+      
+      .mshow
+      {
+        display:block;
+      }
+      
       .coming-soon img {
         object-fit: contain;
         background: #fffdf7;
       }
+      
     }
   </style>
 </head>
 <body>
   <main class="coming-soon" aria-label="Ashoka Prints coming soon">
-    <img src="ashoka-prints-coming-soon.png"
-         alt="Ashoka Prints — Quality That Speaks. Coming Soon."
-         fetchpriority="high">
+    <img class="dshow" src="ashoka-prints-coming-soon.webp" alt="Ashoka Prints — Quality That Speaks. Coming Soon." fetchpriority="high">
+    <img class="mshow" src="mob-coming-soon-poster.webp" alt="Ashoka Prints — Quality That Speaks. Coming Soon." fetchpriority="high">
   </main>
 </body>
 </html>
